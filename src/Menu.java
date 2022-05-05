@@ -1,4 +1,6 @@
+import Heroes.Guerrier;
 import Heroes.Heroe;
+import Heroes.Mage;
 
 import java.util.Scanner;
 
@@ -12,46 +14,42 @@ public class Menu {
         }
 
 
+
         // Methods
 
-        public int displayFirstMenu() {
-                System.out.println("1. Créer un nouveau héro");
-                System.out.println("2. Quitter le jeu");
+        public Heroe createPerso() {
+                Heroe heroes ;
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Choisi t'as classe ");
+                System.out.println("Appuye 1 pour être Guerrier");
+                System.out.println("Appuye 2 pour être Mage");
+                String choiceHero = sc.nextLine();
 
 
-                int quitGame = myObj.nextInt();
-                if (quitGame == 1){
+                switch (choiceHero){
+                        case "1":
+                                 heroes = new Guerrier();
+                                 break;
+
+                        case "2":
+                                heroes = new Mage();
+                                break;
+
+                        default:heroes = new Guerrier();
 
                 }
-                else if (quitGame == 2) System.exit(0);
-
-                return quitGame;
-                }
-
+                return  heroes;
         }
 
 
 
-        public String getName() {
-                System.out.println("Entre ton nom ");
 
-                String userName = myObj.nextLine();  // Read user input
-                System.out.println("Oh" + userName + "c'est le même nom que mon animal de companie ");
-                return userName;
 
-        }
+        // Menu création choix classe héro
 
-        public String nameIsTrue(String testName) {
 
-                System.out.println(testName + " Est-ce ton nom ?");
-                String ConfirmName = myObj.nextLine();
 
-                if (testName == "yes") {
-                        System.out.println( " AHAHAH ok !");
-                }
-                return ConfirmName;
-        }
-}
         // Accessors
 
 
+}

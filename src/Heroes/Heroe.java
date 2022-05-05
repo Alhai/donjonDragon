@@ -16,6 +16,16 @@ public class Heroe {
 
     public Heroe(String pName){
         this.name = pName;
+        this.hp = 12;
+        this.lvlAttack = 12;
+
+    }
+
+    public Heroe(){
+
+        this.name = "Gerome";
+        this.hp = 12;
+        this.lvlAttack = 12;
     }
 
     // Methods
