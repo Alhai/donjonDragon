@@ -2,6 +2,8 @@ import Heroes.Guerrier;
 import Heroes.Heroe;
 import Heroes.Mage;
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Menu {
@@ -16,9 +18,17 @@ public class Menu {
 
 
         // Methods
+        public String Start(){
 
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Bienvenue vile gredin dans le donjon du dragon AbduRozik");
+                System.out.println("Appuye entrée pour démarrer une nouvelle partie");
+                String choiceStart = sc.nextLine();
+
+                return choiceStart;
+        }
         public Heroe createPerso() {
-                Heroe heroes ;
+                Heroe hero ;
                 Scanner sc = new Scanner(System.in);
                 System.out.println("Choisi t'as classe ");
                 System.out.println("Appuye 1 pour être Guerrier");
@@ -28,17 +38,27 @@ public class Menu {
 
                 switch (choiceHero){
                         case "1":
-                                 heroes = new Guerrier();
+                                 hero = new Guerrier();
                                  break;
 
                         case "2":
-                                heroes = new Mage();
+                                hero = new Mage();
                                 break;
 
-                        default:heroes = new Guerrier();
+                        default:hero = new Guerrier();
 
                 }
-                return  heroes;
+                return  hero;
+        }
+
+        public String changeName(){
+                Heroe hero ;
+                Scanner sc = new Scanner(System.in);
+                System.out.println("T'aime ton prénom ?");
+                System.out.println("1. Oui");
+                System.out.println("2. Non");;
+                String choiceName = sc.nextLine();
+                return choiceName;
         }
 
 

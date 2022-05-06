@@ -8,9 +8,12 @@ public class Main {
 //        String testName = menu.getName();
 //        String nameTrueFalse = menu.nameIsTrue(testName);
         Menu menu = new Menu();
-
-        Heroe h = menu.createPerso();
-        System.out.println(h);
+        String begin = menu.Start();
+        System.out.println(begin);
+        Heroe hiro = menu.createPerso();
+        System.out.println(hiro);
+        String choiceName = menu.changeName();
+        System.out.println(choiceName);
 
         //Menu général ( Lancer partie, infos, modifier )
        // menu.parametres(h);

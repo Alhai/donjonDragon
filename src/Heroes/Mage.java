@@ -13,12 +13,13 @@ public class Mage extends Heroe {
     }
     public Mage(){
         super("Froz");
+
     }
 
     // Methods
     @Override
     public String toString() {
-        return this.getName();
+        return "Bienvenue jeune Mage " + "\n" +"Caractéristiques :"+ "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie : "+ this.getHp() + "\n" + "Attaque Physique : " + this.getLvlAttack();
     }
 
     // Accessors

@@ -15,6 +15,8 @@ package Heroes;
         public Guerrier(){
             super();
 
+
+
         }
 
 // Methods
@@ -22,7 +24,8 @@ package Heroes;
 
         @Override
         public String toString() {
-            return this.getName();
+
+            return "Bienvenue jeune Guerrier " + "\n" +"Caractéristiques :"+ "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie :"+ this.getHp() + "\n" + "Attaque Physique :" + this.getLvlAttack();
         }
 
         // Accessors
