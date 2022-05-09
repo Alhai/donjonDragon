@@ -40,4 +40,16 @@ public class Heroe {
     public int getLvlAttack(){
         return this.lvlAttack;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public void setLvlAttack(int lvlAttack) {
+        this.lvlAttack = lvlAttack;
+    }
 }

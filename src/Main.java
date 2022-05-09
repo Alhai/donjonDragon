@@ -12,8 +12,9 @@ public class Main {
         System.out.println(begin);
         Heroe hiro = menu.createPerso();
         System.out.println(hiro);
-        String choiceName = menu.changeName();
+        String choiceName = menu.changeName(hiro);
         System.out.println(choiceName);
+
 
         //Menu général ( Lancer partie, infos, modifier )
        // menu.parametres(h);

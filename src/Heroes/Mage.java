@@ -30,4 +30,17 @@ public class Mage extends Heroe {
     public String getPhiltre() {
         return this.Philtre;
     }
+
+    public void setClasse(String classe) {
+        Classe = classe;
+    }
+
+    public void setSort(String sort) {
+        Sort = sort;
+    }
+
+    public void setPhiltre(String philtre) {
+        Philtre = philtre;
+    }
 }
+

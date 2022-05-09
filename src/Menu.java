@@ -1,6 +1,7 @@
 import Heroes.Guerrier;
 import Heroes.Heroe;
 import Heroes.Mage;
+import org.w3c.dom.ls.LSOutput;
 
 import javax.sound.midi.Soundbank;
 import java.sql.SQLOutput;
@@ -39,10 +40,43 @@ public class Menu {
                 switch (choiceHero){
                         case "1":
                                  hero = new Guerrier();
+                                System.out.println("|\\             //\n" +
+                                        " \\\\           _!_\n" +
+                                        "  \\\\         /___\\\n" +
+                                        "   \\\\        [+++]\n" +
+                                        "    \\\\    _ _\\^^^/_ _\n" +
+                                        "     \\\\/ (    '-'  ( )\n" +
+                                        "     /( \\/ | {&}   /\\ \\\n" +
+                                        "       \\  / \\     / _> )\n" +
+                                        "        \"`   >:::;-'`\"\"'-.\n" +
+                                        "            /:::/         \\\n" +
+                                        "           /  /||   {&}   |\n" +
+                                        "          (  / (\\         /\n" +
+                                        "          / /   \\'-.___.-'\n" +
+                                        "    jgs _/ /     \\ \\\n" +
+                                        "       /___|    /___|");
                                  break;
 
                         case "2":
                                 hero = new Mage();
+                                System.out.println(
+                                        "                         --:'''':--\n" +
+                                        "                           :'_' :\n" +
+                                        "                           _:\"\":\\___\n" +
+                                        "            ' '      ____.' :::     '._\n" +
+                                        "           . *=====<<=)           \\    :\n" +
+                                        "            .  '      '-'-'\\_      /'._.'\n" +
+                                        "                             \\====:_ \"\"\n" +
+                                        "                            .'     \\\\\n" +
+                                        "                           :       :\n" +
+                                        "                          /   :    \\\n" +
+                                        "                         :   .      '.\n" +
+                                        "         ,. _            :  : :      :\n" +
+                                        "      '-'    ).          :__:-:__.;--'\n" +
+                                        "    (        '  )        '-'   '-'\n" +
+                                        " ( -   .00.   - _\n" +
+                                        "(    .'  _ )     )\n" +
+                                        "'-  ()_.\\,\\,   -");
                                 break;
 
                         default:hero = new Guerrier();
@@ -51,21 +85,72 @@ public class Menu {
                 return  hero;
         }
 
-        public String changeName(){
-                Heroe hero ;
+        public String changeName(Heroe hero){
+
                 Scanner sc = new Scanner(System.in);
-                System.out.println("T'aime ton prénom ?");
+                System.out.println("T'aimes ton prénom ?");
                 System.out.println("1. Oui");
                 System.out.println("2. Non");;
+                System.out.println("3. Quitter le jeu");
                 String choiceName = sc.nextLine();
-                return choiceName;
+
+                switch (choiceName){
+                        case "1" :
+                                System.out.println( "Parfait ʘ‿ʘ " );
+                                System.out.println("1. Lancer la partie");
+                                System.out.println("2. Infos héro");
+                                System.out.println("3. Quitter le jeu");
+                                break;
+                        case "2" :
+                                System.out.println("Quoi (╬ ಠ益ಠ) ? t'aime rien toi");
+                                System.out.println("Modifie le nom et tape entrée");
+                                String nameChanged = sc.nextLine();
+                                hero.setName(nameChanged);
+                                System.out.println("Ton nouveau nom est " + nameChanged);
+                                System.out.println("+----------------------------------+\n" +
+                                                    "|              Menu                |\n" +
+                                                    "+----------------------------------+");
+                                System.out.println("1. Lancer la partie");
+                                System.out.println("2. Infos héro");
+                                System.out.println("3. Changer ENCORE le nom");
+                                System.out.println("4. Quitter le jeu");
+                                String choiceMenu = sc.nextLine();
+                                switch (choiceMenu){
+                                        case "1":
+                                        break;
+
+                                        case "2": System.out.println(hero);
+                                        break;
+
+                                        case "3": hero.setName(nameChanged);
+                                        break;
+
+                                        case "4": System.exit(0);
+                                        break;
+                                }
+                                break;
+                        case "3":
+                                System.exit(0);
+
+                        default:
+                                return changeName(hero);
+
+
+                }return choiceName;
         }
 
-
-
-
-
-        // Menu création choix classe héro
+////        public String menuPrincipal(Heroe hero){
+////                System.out.println("1. Lancer la partie + ");
+////                System.out.println("2. Infos sur le héro");
+////                System.out.println("3. Modifier nom du héro");
+////                System.out.println("4. Quitter le jeu");
+////
+////                switch (){
+////
+////                }
+//
+//
+//        }
 
 
 
