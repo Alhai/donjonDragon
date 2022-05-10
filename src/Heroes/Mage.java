@@ -10,16 +10,20 @@ public class Mage extends Heroe {
     public Mage(String pName,String pClass, String pSort, String pPhiltre){
         super(pName);
         this.Classe = pClass;
+        this.Sort = pSort;
+        this.Philtre = pPhiltre;
     }
     public Mage(){
-        super("Froz");
+//        super("Froz");
+
+
 
     }
 
     // Methods
     @Override
     public String toString() {
-        return "Bienvenue jeune Mage " + "\n" +"Caractéristiques :"+ "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie : "+ this.getHp() + "\n" + "Attaque Physique : " + this.getLvlAttack();
+        return "Jeune Mage " + "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie : "+ this.getHp() + "\n" + "Attaque Physique : " + this.getLvlAttack();
     }
 
     // Accessors

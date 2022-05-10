@@ -25,7 +25,7 @@ package Heroes;
         @Override
         public String toString() {
 
-            return "Bienvenue jeune Guerrier " + "\n" +"Caractéristiques :"+ "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie :"+ this.getHp() + "\n" + "Attaque Physique :" + this.getLvlAttack();
+            return "Jeune Guerrier " + "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie :"+ this.getHp() + "\n" + "Attaque Physique :" + this.getLvlAttack();
         }
 
         // Accessors

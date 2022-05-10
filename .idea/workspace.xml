@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5183c348-0481-4791-9cfe-f1e75d7686ef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Heroes/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Guerrier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Heroes/Heroe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Heroe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -76,6 +77,12 @@
       <workItem from="1651737389835" duration="13314000" />
       <workItem from="1651836316564" duration="9891000" />
       <workItem from="1652080517831" duration="15112000" />
+      <workItem from="1652167836443" duration="374000" />
+      <workItem from="1652168868015" duration="16000" />
+      <workItem from="1652169068130" duration="16000" />
+      <workItem from="1652169128163" duration="12000" />
+      <workItem from="1652169338007" duration="86000" />
+      <workItem from="1652170377311" duration="10403000" />
     </task>
     <servers />
   </component>

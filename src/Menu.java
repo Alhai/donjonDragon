@@ -46,14 +46,14 @@ public class Menu {
                                         "   \\\\        [+++]\n" +
                                         "    \\\\    _ _\\^^^/_ _\n" +
                                         "     \\\\/ (    '-'  ( )\n" +
-                                        "     /( \\/ | {&}   /\\ \\\n" +
+                                        "     /( \\/ | {&}   / \\ \\ \1\\n" +
                                         "       \\  / \\     / _> )\n" +
                                         "        \"`   >:::;-'`\"\"'-.\n" +
                                         "            /:::/         \\\n" +
                                         "           /  /||   {&}   |\n" +
                                         "          (  / (\\         /\n" +
                                         "          / /   \\'-.___.-'\n" +
-                                        "    jgs _/ /     \\ \\\n" +
+                                        "    hai _/ /     \\ \\\n" +
                                         "       /___|    /___|");
                                  break;
 
@@ -97,13 +97,12 @@ public class Menu {
                 switch (choiceName){
                         case "1" :
                                 System.out.println( "Parfait ʘ‿ʘ " );
-                                System.out.println("1. Lancer la partie");
-                                System.out.println("2. Infos héro");
-                                System.out.println("3. Quitter le jeu");
                                 break;
+
+
                         case "2" :
                                 System.out.println("Quoi (╬ ಠ益ಠ) ? t'aime rien toi");
-                                System.out.println("Modifie le nom et tape entrée");
+                                System.out.println("Modifie le nom et tape entrée, ce sera définitif cette fois");
                                 String nameChanged = sc.nextLine();
                                 hero.setName(nameChanged);
                                 System.out.println("Ton nouveau nom est " + nameChanged);
@@ -114,8 +113,8 @@ public class Menu {
                                 System.out.println("2. Infos héro");
                                 System.out.println("3. Changer ENCORE le nom");
                                 System.out.println("4. Quitter le jeu");
-                                String choiceMenu = sc.nextLine();
-                                switch (choiceMenu){
+                                String choiceMenu2 = sc.nextLine();
+                                switch (choiceMenu2){
                                         case "1":
                                         break;
 
@@ -136,25 +135,32 @@ public class Menu {
                                 return changeName(hero);
 
 
-                }return choiceName;
+                }       return choiceName;
         }
 
-////        public String menuPrincipal(Heroe hero){
-////                System.out.println("1. Lancer la partie + ");
-////                System.out.println("2. Infos sur le héro");
-////                System.out.println("3. Modifier nom du héro");
-////                System.out.println("4. Quitter le jeu");
-////
-////                switch (){
-////
-////                }
-//
-//
-//        }
+                public String menuPrincipal(Heroe hero) {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("+----------------------------------+\n" +
+                                "|              Menu                |\n" +
+                                "+----------------------------------+");
+                        System.out.println("1. Lancer la partie");
+                        System.out.println("2. Infos héro");
+                        System.out.println("3. Quitter le jeu");
+                        String mainMenu = sc.nextLine();
+                        switch (mainMenu) {
+                                case "1":
+                                        break;
+                                case "2":
+                                        System.out.println(hero);
+                                        return menuPrincipal(hero);
+                                case "3":
+                                        System.exit(0);
+                                default:
+                                        return menuPrincipal(hero);
+
+                        }
+                        return mainMenu;
+                }         // Accessors
 
 
-
-        // Accessors
-
-
-}
+                }

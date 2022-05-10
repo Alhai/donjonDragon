@@ -14,7 +14,8 @@ public class Main {
         System.out.println(hiro);
         String choiceName = menu.changeName(hiro);
         System.out.println(choiceName);
-
+        String mainMenu = menu.menuPrincipal(hiro);
+        System.out.println(mainMenu);
 
         //Menu général ( Lancer partie, infos, modifier )
        // menu.parametres(h);
