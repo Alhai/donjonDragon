@@ -14,7 +14,7 @@ public class Mage extends Heroe {
         this.Philtre = pPhiltre;
     }
     public Mage(){
-//        super("Froz");
+       super("Froz");
 
 
 

@@ -16,17 +16,11 @@ public class Heroe {
 
     public Heroe(String pName){
         this(pName, 8, 7);
-//        this.name = pName;
-//        this.hp = 12;
-//        this.lvlAttack = 12;
-
     }
 
     public Heroe(){
         this ("Gerome");
-//        this.name = "Gerome";
-//        this.hp = 12;
-//        this.lvlAttack = 12;
+//
     }
 
     // Methods
