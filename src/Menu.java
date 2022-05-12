@@ -168,27 +168,29 @@ public class Menu {
                 return mainMenu;
         }         // Accessors
 
-        public int positionHero() {
+        public int lancementDdeJeu() {
                 int sum = 0;
-//                int max = 6;
-//                int min = 1;
+                int max = 7;
+                int min = 1;
 //                int range = max - min + 1;
-                while ( sum <= 64){
+                while ( sum < 64){
                         sum++;
-                        int rand = (int)(Math.random()*6+1);
-                        sum = sum + rand;
-                        System.out.println(sum);
-                       if (sum >= 64){
+//                        Scanner sc = new Scanner(System.in);
+//                        String tourDeJeu = sc.nextLine();
+                        int random = (int)Math.ceil((Math.random() * (max - min) ));
+                        System.out.println(random);
+                        sum = sum + random;
 
+                       if (sum > 64){
+                                sum = 64;
                                System.out.println("Tu as gagné");
-                       }
 
+                       }
+                        System.out.println("Tu es à la case " + sum);
                 }
                 return sum;
         }
                                 public String menuEnd(){
-                                        Scanner sc = new Scanner(System.in);
-                                        String gameOver = sc.nextLine();
 
                                         System.out.println("+----------------------------------+\n" +
                                                 "|       Recommencer une Partie     |\n" +
@@ -197,9 +199,12 @@ public class Menu {
                                                 "|           Quitter le jeu         |\n" +
                                                 "+----------------------------------+");
                                         System.out.println("Appuyez sur 1 pour recommencer et 2 pour quitter le jeu");
+                                        Scanner sc = new Scanner(System.in);
+                                        String gameOver = sc.nextLine();
                                         switch (gameOver){
-                                                case 1": return positionHero();
-                                                break;
+                                                case "1":
+                                                        System.out.println("Une nouvelle partie cool");
+                                                        return Start();
 
                                                 case "2": System.exit(0);
                                                         break;

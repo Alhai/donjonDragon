@@ -3,21 +3,22 @@ import Heroes.Mage;
 
 public class Main {
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
 //        String testName = menu.getName();
 //        String nameTrueFalse = menu.nameIsTrue(testName);
-        Menu menu = new Menu();
-        String begin = menu.Start();
-        System.out.println(begin);
-        Heroe hiro = menu.createPerso();
-        System.out.println(hiro);
-        String choiceName = menu.changeName(hiro);
-        System.out.println(choiceName);
-        int mainMenu = menu.positionHero(hiro);
-        System.out.println(mainMenu);
-//        int tableau = menu.plateau();
-//        System.out.println(tableau);
+Menu menu = new Menu();
+String begin = menu.Start();
+System.out.println(begin);
+Heroe hiro = menu.createPerso();
+System.out.println(hiro);
+String choiceName = menu.changeName(hiro);
+System.out.println(choiceName);
+int LancerdeD = menu.lancementDdeJeu();
+        System.out.println(LancerdeD);
+        String Over = menu.menuEnd();
+        System.out.println(Over);
+
 
         //Menu général ( Lancer partie, infos, modifier )
        // menu.parametres(h);
