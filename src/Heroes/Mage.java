@@ -1,6 +1,7 @@
 package Heroes;
 
 public class Mage extends Heroe {
+
     // Attributes
     private String Classe;
     private String Sort;

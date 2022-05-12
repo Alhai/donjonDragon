@@ -17,6 +17,11 @@ public class Menu {
         }
 
 
+        /**
+         * Valide l'entrée sur le jeu et sert de porte d'entrée pour la création d'un personnage.
+         * @Println LesPrintsLn affiche l'instance de mon scanner
+         * @return l'entrée du scanner
+         */
         // Methods
         public String Start() {
 
@@ -28,6 +33,12 @@ public class Menu {
                 return choiceStart;
         }
 
+        /**
+         * Instancie une méthode qui permet la création d'un personnage
+         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner
+         * @choiceHero LeChoiceHero Attend le résultat pour choisir quel classe instancier
+         * @return Les caractéristiques du personnage choisi
+         */
         public Heroe createPerso() {
                 Heroe hero;
                 Scanner sc = new Scanner(System.in);
@@ -80,13 +91,23 @@ public class Menu {
                                 break;
 
                         default:
-                                hero = new Guerrier();
+                                return createPerso();
 
                 }
                 return hero;
         }
 
+        /**
+         * Permet d'après le return du nouveau héro qui a était instancier de pouvoir changer sont attribut nom
+         * grace à un setter.
+         * @param hero
+         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner ou les interactions possibles
+         * sur les menu.
+         * @
+         * @return le choix de l'utilisateur si il décide de changer le nom celà retourne les modifications
+         */
         public String changeName(Heroe hero) {
+
 
                 Scanner sc = new Scanner(System.in);
                 System.out.println("T'aimes ton prénom ?");
@@ -103,6 +124,9 @@ public class Menu {
 
 
                         case "2":
+                                try {
+                                        
+                                }
                                 System.out.println("Quoi (╬ ಠ益ಠ) ? t'aime rien toi");
                                 System.out.println("Modifie le nom et tape entrée, ce sera définitif cette fois");
                                 String nameChanged = sc.nextLine();
@@ -144,6 +168,15 @@ public class Menu {
                 return choiceName;
         }
 
+        /**
+         * Menu qui affiche les choix possibles après l'étape de création d'un héro
+         * @param hero
+         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner ou les interactions possibles
+         * sur les menu.
+         * @mainMenu LeMainMenu Déclaration d'une variable qui attend une entrée sur le scanner
+         * @Switch LeSwitch Après l'entrée scanner défini les conditions possibles et réagi en conséquence
+         * @return Le choix scanner qui à était rentré
+         */
         public String menuPrincipal(Heroe hero) {
                 Scanner sc = new Scanner(System.in);
                 System.out.println("+----------------------------------+\n" +
@@ -168,27 +201,34 @@ public class Menu {
                 return mainMenu;
         }         // Accessors
 
+        /**
+         * Affiche le résultat d'un lancement de dé à chaque à tour de "jeu"
+         * @cases Lecases affiche l'emplacement de depart d'un dé
+         * @max&Min LeMax&Min sont les valeur possibles d'un lancer de dé
+         *
+         * @return
+         */
         public int lancementDdeJeu() {
-                int sum = 0;
+                int cases = 0;
                 int max = 7;
                 int min = 1;
 //                int range = max - min + 1;
-                while ( sum < 64){
-                        sum++;
-//                        Scanner sc = new Scanner(System.in);
-//                        String tourDeJeu = sc.nextLine();
+                while ( cases < 64){
+                        cases++;
+                        Scanner sc = new Scanner(System.in);
+                        String tourDeJeu = sc.nextLine();
                         int random = (int)Math.ceil((Math.random() * (max - min) ));
                         System.out.println(random);
-                        sum = sum + random;
+                        cases = cases + random;
 
-                       if (sum > 64){
-                                sum = 64;
+                       if (cases > 64){
+                                cases = 64;
                                System.out.println("Tu as gagné");
 
                        }
-                        System.out.println("Tu es à la case " + sum);
+                        System.out.println("Tu es à la case " + cases);
                 }
-                return sum;
+                return cases;
         }
                                 public String menuEnd(){
 
@@ -204,11 +244,11 @@ public class Menu {
                                         switch (gameOver){
                                                 case "1":
                                                         System.out.println("Une nouvelle partie cool");
-                                                        return Start();
+                                                        return "restart";
 
                                                 case "2": System.exit(0);
                                                         break;
-                                                default: return gameOver;
+                                                default: return menuEnd();
                                         }
                                         return gameOver;
                                 }

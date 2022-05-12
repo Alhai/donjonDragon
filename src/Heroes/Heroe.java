@@ -2,7 +2,8 @@ package Heroes;
 
     // Attributes
 
-public class Heroe {
+
+public abstract class Heroe {
     private String name;
     private int hp;
     private int lvlAttack;

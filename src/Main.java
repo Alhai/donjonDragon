@@ -3,21 +3,31 @@ import Heroes.Mage;
 
 public class Main {
 
+    /**
+     * Appel les méthodes qui sont instanciées dans ma classe menu et les affiches dans un scanner
+     * @param args
+     * @author Aly HAIDARA
+     *
+     */
 public static void main(String[] args) {
 
 //        String testName = menu.getName();
 //        String nameTrueFalse = menu.nameIsTrue(testName);
-Menu menu = new Menu();
-String begin = menu.Start();
-System.out.println(begin);
-Heroe hiro = menu.createPerso();
-System.out.println(hiro);
-String choiceName = menu.changeName(hiro);
-System.out.println(choiceName);
-int LancerdeD = menu.lancementDdeJeu();
-        System.out.println(LancerdeD);
-        String Over = menu.menuEnd();
-        System.out.println(Over);
+    String Over = "";
+  do {
+      Menu menu = new Menu();
+      String begin = menu.Start();
+      System.out.println(begin);
+      Heroe hiro = menu.createPerso();
+      System.out.println(hiro);
+      String choiceName = menu.changeName(hiro);
+      System.out.println(choiceName);
+      int LancerdeD = menu.lancementDdeJeu();
+      System.out.println(LancerdeD);
+      Over = menu.menuEnd();
+      System.out.println(Over);
+  } while (Over == "restart");
+
 
 
         //Menu général ( Lancer partie, infos, modifier )
