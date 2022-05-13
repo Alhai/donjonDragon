@@ -5,22 +5,29 @@ import org.w3c.dom.ls.LSOutput;
 
 import javax.sound.midi.Soundbank;
 import java.sql.SQLOutput;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Cette classe affiche et gere les Menus du jeu
+ */
 public class Menu {
         // Attributes
         private Scanner myObj;
 
+        /**
+         * Instancie le premier scanner de la classe
+         */
         // Constructors
         public Menu() {
-                this.myObj = new Scanner(System.in);  // Create a Scanner object
+                this.myObj = new Scanner(System.in);
         }
 
 
         /**
-         * Valide l'entrée sur le jeu et sert de porte d'entrée pour la création d'un personnage.
+         * Valide l'entree sur le jeu et sert de porte d'entree pour la creation d'un personnage.
          * @Println LesPrintsLn affiche l'instance de mon scanner
-         * @return l'entrée du scanner
+         * @return l'entree du scanner
          */
         // Methods
         public String Start() {
@@ -34,10 +41,10 @@ public class Menu {
         }
 
         /**
-         * Instancie une méthode qui permet la création d'un personnage
-         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner
-         * @choiceHero LeChoiceHero Attend le résultat pour choisir quel classe instancier
-         * @return Les caractéristiques du personnage choisi
+         * Instancie une methode qui permet la creation d'un personnage
+         * @Println LesPrintln affiche les choix possibles a rentrer sur le scanner
+         * @choiceHero LeChoiceHero Attend le resultat pour choisir quel classe instancier
+         * @return Les caracteristiques du personnage choisi
          */
         public Heroe createPerso() {
                 Heroe hero;
@@ -98,21 +105,21 @@ public class Menu {
         }
 
         /**
-         * Permet d'après le return du nouveau héro qui a était instancier de pouvoir changer sont attribut nom
-         * grace à un setter.
+         * Permet d'apres le return du nouveau hero qui a etait instancier de pouvoir changer sont attribut nom
+         * grace a un setter.
          * @param hero
-         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner ou les interactions possibles
+         * @Println LesPrintln affiche les choix possibles a rentrer sur le scanner ou les interactions possibles
          * sur les menu.
          * @
-         * @return le choix de l'utilisateur si il décide de changer le nom celà retourne les modifications
+         * @return le choix de l'utilisateur si il decide de changer le nom cela retourne les modifications
          */
         public String changeName(Heroe hero) {
 
 
                 Scanner sc = new Scanner(System.in);
-                System.out.println("T'aimes ton prénom ?");
-                System.out.println("1. Oui");
-                System.out.println("2. Non");
+                System.out.println("Veux tu changer ton Nom ?");
+                System.out.println("1. Non");
+                System.out.println("2. Oui");
                 ;
                 System.out.println("3. Quitter le jeu");
                 String choiceName = sc.nextLine();
@@ -125,20 +132,25 @@ public class Menu {
 
                         case "2":
                                 try {
-                                        
+                                        Scanner NoSc = new Scanner(System.in);
+                                        System.out.println("Quoi (╬ ಠ益ಠ) ? t'aime rien toi");
+                                        System.out.println("Modifie le nom et tape entrée, ce sera définitif cette fois");
+                                        System.out.println("Les chiffres et caractères spéciaux ne sont pas possible");
+                                        String nameChanged = NoSc.next("^[-a-zA-Z]+");
+                                        hero.setName(nameChanged);
+                                        System.out.println("Ton nouveau nom est " + nameChanged);
+                                } catch (InputMismatchException e){
+                                        System.out.println("Le nouveau nom n'est pas valide");
+                                        return changeName(hero);
+
                                 }
-                                System.out.println("Quoi (╬ ಠ益ಠ) ? t'aime rien toi");
-                                System.out.println("Modifie le nom et tape entrée, ce sera définitif cette fois");
-                                String nameChanged = sc.nextLine();
-                                hero.setName(nameChanged);
-                                System.out.println("Ton nouveau nom est " + nameChanged);
+
                                 System.out.println("+----------------------------------+\n" +
                                         "|              Menu                |\n" +
                                         "+----------------------------------+");
                                 System.out.println("1. Lancer la partie");
                                 System.out.println("2. Infos héro");
-                                System.out.println("3. Changer ENCORE le nom");
-                                System.out.println("4. Quitter le jeu");
+                                System.out.println("3. Quitter le jeu");
                                 String choiceMenu2 = sc.nextLine();
                                 switch (choiceMenu2) {
                                         case "1":
@@ -148,11 +160,9 @@ public class Menu {
                                                 System.out.println(hero);
                                                 break;
 
-                                        case "3":
-                                                hero.setName(nameChanged);
-                                                break;
+//
 
-                                        case "4":
+                                        case "3":
                                                 System.exit(0);
                                                 break;
                                 }
@@ -169,13 +179,13 @@ public class Menu {
         }
 
         /**
-         * Menu qui affiche les choix possibles après l'étape de création d'un héro
+         * Menu qui affiche les choix possibles apres l'etape de creation d'un hero
          * @param hero
-         * @Println LesPrintln affiche les choix possibles à rentrer sur le scanner ou les interactions possibles
+         * @Println LesPrintln affiche les choix possibles a rentrer sur le scanner ou les interactions possibles
          * sur les menu.
-         * @mainMenu LeMainMenu Déclaration d'une variable qui attend une entrée sur le scanner
-         * @Switch LeSwitch Après l'entrée scanner défini les conditions possibles et réagi en conséquence
-         * @return Le choix scanner qui à était rentré
+         * @mainMenu LeMainMenu Declaration d'une variable qui attend une entree sur le scanner
+         * @Switch LeSwitch Apres l'entree scanner defini les conditions possibles et reagi en consequence
+         * @return Le choix scanner qui a etait rentre
          */
         public String menuPrincipal(Heroe hero) {
                 Scanner sc = new Scanner(System.in);
@@ -202,10 +212,9 @@ public class Menu {
         }         // Accessors
 
         /**
-         * Affiche le résultat d'un lancement de dé à chaque à tour de "jeu"
-         * @cases Lecases affiche l'emplacement de depart d'un dé
-         * @max&Min LeMax&Min sont les valeur possibles d'un lancer de dé
-         *
+         * Affiche le resultat d'un lancement de de a chaque a tour de "jeu"
+         * @cases Lecases affiche l'emplacement de depart d'un de
+         * @max&Min LeMaxetMin sont les valeur possibles d'un lancer de de
          * @return
          */
         public int lancementDdeJeu() {
@@ -230,6 +239,12 @@ public class Menu {
                 }
                 return cases;
         }
+
+        /**
+         * Cette classe permet au joueur de choisir si il décide de recommencer une partie ou de quitter le jeu
+         * @gameOver variable qui instancie le scanner qui permet a l utilisateur de faire son choix
+         * @return le choix de l'utilisateur
+         */
                                 public String menuEnd(){
 
                                         System.out.println("+----------------------------------+\n" +
