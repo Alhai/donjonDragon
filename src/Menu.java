@@ -158,7 +158,7 @@ public class Menu {
 
                                         case "2":
                                                 System.out.println(hero);
-                                                break;
+                                                return menuPrincipal(hero);
 
 //
 

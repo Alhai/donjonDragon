@@ -21,7 +21,8 @@ package Heroes;
 
 // Methods
 
-
+//        public abstract presentation(){
+//        }
         @Override
         public String toString() {
 

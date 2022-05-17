@@ -24,7 +24,7 @@ public class Mage extends Heroe {
 
     // Methods
     @Override
-    public String presentation() {
+    public String toString() {
         return "Jeune Mage " + "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie : "+ this.getHp() + "\n" + "Attaque Physique : " + this.getLvlAttack();
     }
 
