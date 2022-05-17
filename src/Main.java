@@ -1,3 +1,4 @@
+import Exceptions.myException;
 import Heroes.Heroe;
 import Heroes.Mage;
 
@@ -9,7 +10,7 @@ public class Main {
      * @author Aly HAIDARA
      *
      */
-public static void main(String[] args) {
+public static void main(String[] args) throws myException {
 
 //        String testName = menu.getName();
 //        String nameTrueFalse = menu.nameIsTrue(testName);

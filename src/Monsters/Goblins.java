@@ -1,6 +1,8 @@
 package Monsters;
 
-public class Goblins extends Monster{
+import Cases.Case;
+
+public class Goblins extends Monster {
 
     public Goblins(){
         super("Goblinus", 6, 1);

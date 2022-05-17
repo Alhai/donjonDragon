@@ -1,3 +1,4 @@
+import Exceptions.myException;
 import Heroes.Guerrier;
 import Heroes.Heroe;
 import Heroes.Mage;
@@ -217,28 +218,35 @@ public class Menu {
          * @max&Min LeMaxetMin sont les valeur possibles d'un lancer de de
          * @return
          */
-        public int lancementDdeJeu() {
+        public int lancementDdeJeu() throws myException {
                 int cases = 0;
                 int max = 7;
                 int min = 1;
 //                int range = max - min + 1;
-                while ( cases < 64){
-                        cases++;
+                while (cases < 64) {
+
                         Scanner sc = new Scanner(System.in);
                         String tourDeJeu = sc.nextLine();
-                        int random = (int)Math.ceil((Math.random() * (max - min) ));
+                        int random = (int) Math.ceil((Math.random() * (max - min)));
                         System.out.println(random);
                         cases = cases + random;
+                        try {
+                                if (cases >= 64) {
+                                        throw new myException("you win");
 
-                       if (cases > 64){
+                                }
+                        } catch (myException ex) {
                                 cases = 64;
-                               System.out.println("Tu as gagné");
+                                System.out.println(ex.getMessage());
 
-                       }
+                        }
                         System.out.println("Tu es à la case " + cases);
+
+
                 }
                 return cases;
         }
+
 
         /**
          * Cette classe permet au joueur de choisir si il décide de recommencer une partie ou de quitter le jeu

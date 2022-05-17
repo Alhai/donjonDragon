@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c348-0481-4791-9cfe-f1e75d7686ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bonus/Arme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bonus/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bonus/Popo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Bonus/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cases/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Monsters/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Monsters/Goblins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Monsters/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Monsters/Sorcier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/myException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Guerrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Heroe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Heroe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bonus/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bonus/Attack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Case.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Goblins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monsters/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,7 @@
       <workItem from="1652261402441" duration="12173000" />
       <workItem from="1652340133422" duration="17677000" />
       <workItem from="1652425721597" duration="16504000" />
-      <workItem from="1652685170172" duration="21188000" />
+      <workItem from="1652685170172" duration="27489000" />
     </task>
     <servers />
   </component>

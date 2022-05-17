@@ -1,6 +1,8 @@
 package Monsters;
 
-public class Monster {
+import Cases.Case;
+
+public class Monster extends Case {
     // attributes
     private String name;
     private int vie;
