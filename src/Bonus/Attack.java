@@ -1,8 +1,8 @@
 package Bonus;
 
-import Cases.Case;
 
-public class Attack extends  Case {
+
+public class Attack extends Case{
     private String name;
     private int attack;
 

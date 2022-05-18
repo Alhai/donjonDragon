@@ -21,7 +21,7 @@ package Heroes;
 
 // Methods
 
-//        public abstract presentation(){
+
 //        }
         @Override
         public String toString() {
@@ -36,6 +36,11 @@ package Heroes;
         }
         public String getPhiltre() {
             return this.Bouclier;
+        }
+
+        @Override
+        public String criDeGuerre() {
+            return "BAAAHJAAAAT !!!!";
         }
     }
 

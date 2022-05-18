@@ -24,6 +24,11 @@ public class Mage extends Heroe {
 
     // Methods
     @Override
+    public String criDeGuerre() {
+
+        return "euh j'envoi des boule de feu ! (●´ω｀●) ";
+    }
+    @Override
     public String toString() {
         return "Jeune Mage " + "\n" +"Nom : " + this.getName() + "\n" + "Point de Vie : "+ this.getHp() + "\n" + "Attaque Physique : " + this.getLvlAttack();
     }

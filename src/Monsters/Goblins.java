@@ -1,7 +1,5 @@
 package Monsters;
 
-import Cases.Case;
-
 public class Goblins extends Monster {
 
     public Goblins(){

@@ -1,6 +1,6 @@
 package Monsters;
 
-import Cases.Case;
+import Bonus.Case;
 
 public class Monster extends Case {
     // attributes

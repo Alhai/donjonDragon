@@ -1,6 +1,9 @@
 import Exceptions.myException;
 import Heroes.Heroe;
 import Heroes.Mage;
+import Bonus.Case;
+import java.util.ArrayList;
+
 
 public class Main {
 
@@ -10,52 +13,34 @@ public class Main {
      * @author Aly HAIDARA
      *
      */
-public static void main(String[] args) throws myException {
+    public static void main(String[] args) throws myException {
 
 //        String testName = menu.getName();
 //        String nameTrueFalse = menu.nameIsTrue(testName);
-    String Over = "";
-  do {
-      Menu menu = new Menu();
-      String begin = menu.Start();
-      System.out.println(begin);
-      Heroe hiro = menu.createPerso();
-      System.out.println(hiro);
-      String choiceName = menu.changeName(hiro);
-      System.out.println(choiceName);
-      int LancerdeD = menu.lancementDdeJeu();
-      System.out.println(LancerdeD);
-      Over = menu.menuEnd();
-      System.out.println(Over);
-  } while (Over == "restart");
+        String Over = "";
+//  do {
 
-
-
-
-
-        //Menu général ( Lancer partie, infos, modifier )
-       // menu.parametres(h);
-
-        //Commence le jeu ici
-        // While()
-
-
-
-
-
-//        Heroe Heroes = new Heroe("Francis", 9, 7);
-//        System.out.println(Heroes.getName());
-//        System.out.println(Heroes.getHp());
-//        System.out.println(Heroes.getLvlAttack());
-//
-//        Heroe Heroes2 = new Heroe("Maurice", 5, 11);
-//        System.out.println(Heroes2.getName());
-//        System.out.println(Heroes2.getHp());
-//        System.out.println(Heroes2.getLvlAttack());
-
-
-
-
+        Menu menu = new Menu();
+        String begin = menu.Start();
+        System.out.println(begin);
+        Heroe hiro = menu.createPerso();
+        System.out.println(hiro);
+        String choiceName = menu.changeName(hiro);
+        System.out.println(choiceName);
+        Game game = new Game();
+        String chant = hiro.criDeGuerre();
+        System.out.println(chant);
+        int lanceLeJeu = game.Case();
+        System.out.println(lanceLeJeu);
+        try {
+            int LancerdeD = game.lancementDdeJeu();
+            System.out.println(LancerdeD);
+        } catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
+//      Over = menu.menuEnd();
+//      System.out.println(Over);
+//  } while (Over == "restart");
 
     }
 }

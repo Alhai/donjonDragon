@@ -25,7 +25,7 @@ public abstract class Heroe {
     }
 
     // Methods
-//    public abstract String presentation();
+    public abstract String criDeGuerre();
 
     // Accessors
     public int getHp(){

@@ -1,4 +1,4 @@
-package Cases;
+package Bonus;
 
 public class Case {
 

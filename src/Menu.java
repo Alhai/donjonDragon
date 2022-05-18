@@ -212,40 +212,7 @@ public class Menu {
                 return mainMenu;
         }         // Accessors
 
-        /**
-         * Affiche le resultat d'un lancement de de a chaque a tour de "jeu"
-         * @cases Lecases affiche l'emplacement de depart d'un de
-         * @max&Min LeMaxetMin sont les valeur possibles d'un lancer de de
-         * @return
-         */
-        public int lancementDdeJeu() throws myException {
-                int cases = 0;
-                int max = 7;
-                int min = 1;
-//                int range = max - min + 1;
-                while (cases < 64) {
 
-                        Scanner sc = new Scanner(System.in);
-                        String tourDeJeu = sc.nextLine();
-                        int random = (int) Math.ceil((Math.random() * (max - min)));
-                        System.out.println(random);
-                        cases = cases + random;
-                        try {
-                                if (cases >= 64) {
-                                        throw new myException("you win");
-
-                                }
-                        } catch (myException ex) {
-                                cases = 64;
-                                System.out.println(ex.getMessage());
-
-                        }
-                        System.out.println("Tu es à la case " + cases);
-
-
-                }
-                return cases;
-        }
 
 
         /**
@@ -253,26 +220,26 @@ public class Menu {
          * @gameOver variable qui instancie le scanner qui permet a l utilisateur de faire son choix
          * @return le choix de l'utilisateur
          */
-                                public String menuEnd(){
+        public String menuEnd(){
 
-                                        System.out.println("+----------------------------------+\n" +
-                                                "|       Recommencer une Partie     |\n" +
-                                                "+----------------------------------+");
-                                        System.out.println("+----------------------------------+\n" +
-                                                "|           Quitter le jeu         |\n" +
-                                                "+----------------------------------+");
-                                        System.out.println("Appuyez sur 1 pour recommencer et 2 pour quitter le jeu");
-                                        Scanner sc = new Scanner(System.in);
-                                        String gameOver = sc.nextLine();
-                                        switch (gameOver){
-                                                case "1":
-                                                        System.out.println("Une nouvelle partie cool");
-                                                        return "restart";
+                System.out.println("+----------------------------------+\n" +
+                        "|       Recommencer une Partie     |\n" +
+                        "+----------------------------------+");
+                System.out.println("+----------------------------------+\n" +
+                        "|           Quitter le jeu         |\n" +
+                        "+----------------------------------+");
+                System.out.println("Appuyez sur 1 pour recommencer et 2 pour quitter le jeu");
+                Scanner sc = new Scanner(System.in);
+                String gameOver = sc.nextLine();
+                switch (gameOver){
+                        case "1":
+                                System.out.println("Une nouvelle partie cool");
+                                return "restart";
 
-                                                case "2": System.exit(0);
-                                                        break;
-                                                default: return menuEnd();
-                                        }
-                                        return gameOver;
-                                }
+                        case "2": System.exit(0);
+                                break;
+                        default: return menuEnd();
+                }
+                return gameOver;
+        }
 }
