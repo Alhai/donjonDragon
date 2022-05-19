@@ -1,8 +1,7 @@
-package Bonus;
+package Cases.Bonus;
 
 
-
-public class Attack extends Case{
+public class Attack extends surpriseCrate {
     private String name;
     private int attack;
 

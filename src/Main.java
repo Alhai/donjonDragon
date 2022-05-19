@@ -1,8 +1,5 @@
 import Exceptions.myException;
 import Heroes.Heroe;
-import Heroes.Mage;
-import Bonus.Case;
-import java.util.ArrayList;
 
 
 public class Main {
@@ -30,11 +27,12 @@ public class Main {
         Game game = new Game();
         String chant = hiro.criDeGuerre();
         System.out.println(chant);
-        int lanceLeJeu = game.Case();
-        System.out.println(lanceLeJeu);
+
+//        System.out.println();
         try {
-            int LancerdeD = game.lancementDdeJeu();
-            System.out.println(LancerdeD);
+            game.lancementDdeJeu();
+//            int LancerdeD = game.lancementDdeJeu();
+            System.out.println(game.);
         } catch (Exception ex){
             System.out.println(ex.getMessage());
         }

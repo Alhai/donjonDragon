@@ -8,19 +8,24 @@ public abstract class Heroe {
     private int hp;
     private int lvlAttack;
 
+    private int maxHp;
+
+    private int maxAttack;
+
     /* Constructors */
-    public Heroe(String pName, int pHp, int plvlAttack){
+    public Heroe(String pName, int pHp, int plvlAttack, int pmaxHp, int pmaxAttack){
         this.name = pName;
         this.hp = pHp;
         this.lvlAttack = plvlAttack;
+        this.maxHp = pmaxHp;
+        this.maxAttack = pmaxAttack;
     }
 
     public Heroe(String pName){
-        this(pName, 8, 7);
+        this(pName, 8, 7,10,10);
     }
 
     public Heroe(){
-        this ("Gerome");
 //
     }
 

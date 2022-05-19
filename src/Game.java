@@ -1,23 +1,33 @@
-import Bonus.Epee;
-import Bonus.Case;
-import Bonus.Potion;
+import Cases.Bonus.Epee;
+import Cases.Bonus.Potion;
+import Cases.Case;
+import Cases.Ennemies.goblins;
+import Cases.emptyCase;
 import Exceptions.myException;
-import Monsters.Goblins;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Game {
-    private List<Case> plateau;
+public class Game extends Case {
+    private int position;
+    ArrayList<Case> plateau = new ArrayList<>();
 
-    public Game(){
-        plateau = new ArrayList<>();
-        plateau.add();
+
+    public Game() {
+        position = 0;
+        Case caseVide = new emptyCase();
+        goblins goblin = new goblins();
+        Epee exca = new Epee();
+        Potion potion = new Potion();
+        plateau.add(caseVide);
+        plateau.add(goblin);
+        plateau.add(exca);
+        plateau.add(potion);
     }
-//    public ArrayList <Case> duJeu() {
+//    public ArrayList <Goblins.Case> duJeu() {
 //
-//        ArrayList cases = new ArrayList<Case>();
+//        ArrayList cases = new ArrayList<Monsters.Goblins.Case>();
 //
 //        cases.add(new caseVide());
 //        cases.add(new Goblins());
@@ -25,18 +35,19 @@ public class Game {
 //        cases.add(new Potion());
 //        return cases;
 //    }
+
     /**
      * Affiche le resultat d'un lancement de de a chaque a tour de "jeu"
+     *
+     * @return
      * @cases Lecases affiche l'emplacement de depart d'un de
      * @max&Min LeMaxetMin sont les valeur possibles d'un lancer de de
-     * @return
      */
-    public int lancementDdeJeu() throws myException {
-        int position = 0;
+    public void lancementDdeJeu() throws myException {
         int max = 2;
         int min = 1;
 //                int range = max - min + 1;
-        while (position < 64) {
+        while (this.position < 64) {
 
             Scanner sc = new Scanner(System.in);
             String tourDeJeu = sc.nextLine();
@@ -44,41 +55,51 @@ public class Game {
             System.out.println(random);
             position = position + random;
 
-            try {
-
-                if (position >= 64) {
-                    throw new myException();
-
-                }
-            } catch (myException ex) {
-                position  = 64;
-                System.out.println(ex.getMessage());
-
-            }
-            System.out.println("Tu es à la case " + position);
-
+//            try {
+//
+//                if (position >= 64) {
+//                    throw new myException();
+//
+//                }
+//            } catch (myException ex) {
+//                position  = 64;
+//                System.out.println(ex.getMessage());
+//
+//            }
+//            System.out.println("Tu es à la case " + position);
+//
+//        }
 
         }
 
-        return position;
+
+//
+//    public int positionHero () throws myException {
+//        int posHero = lancementDdeJeu(position);
+//        System.out.println(posHero);
+//
+//        return posHero;
+//    }
+
     }
-
-    public static void main(String[] args) {
-        Game joue = new Game();
-        joue.lancementDdeJeu ();
+    public int lancerleD(){
+        int max = 2;
+        int min = 1;
+        int random = (int) Math.ceil((Math.random() * (max - min)));
+        System.out.println(random);
+        return random;
     }
-    public int Case() throws myException {
-        int positionHero = 0;
+    public void calculPosition(int random){
+        this.position = this.position + random;
 
-
-        if (positionHero == 0){
-            positionHero = lancementDdeJeu();
-            caseDuJeu.get(positionHero);
-
-//           return positionHero;
-        }
-        return positionHero;
     }
+    public void affichePosition(int random){
+        System.out.println("le dé :" + random);
+        System.out.println("ma position est :" + this.position);
+    }
+    public int tourDeJeu(){
+       int unlancer = lancerleD();
+       int resultatDuD = calculPosition(unlancer);
 
-
+    }
 }

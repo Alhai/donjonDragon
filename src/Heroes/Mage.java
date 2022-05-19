@@ -4,24 +4,17 @@ package Heroes;
 public class Mage extends Heroe {
 
     // Attributes
-    private String Classe;
     private String Sort;
-    private String Philtre;
     // Constructors
 
-    public Mage(String pName,String pClass, String pSort, String pPhiltre){
+    public Mage(String pName){
         super(pName);
-        this.Classe = pClass;
-        this.Sort = pSort;
-        this.Philtre = pPhiltre;
     }
     public Mage(){
-       super("Froz");
-
+       super("Froz", 4 , 9,6,15);
 
 
     }
-
     // Methods
     @Override
     public String criDeGuerre() {
@@ -34,24 +27,14 @@ public class Mage extends Heroe {
     }
 
     // Accessors
-    public String getClasse(){return this.Classe;}
     public String getSort(){
         return this.Sort;
     }
-    public String getPhiltre() {
-        return this.Philtre;
-    }
 
-    public void setClasse(String classe) {
-        Classe = classe;
-    }
 
     public void setSort(String sort) {
         Sort = sort;
     }
 
-    public void setPhiltre(String philtre) {
-        Philtre = philtre;
-    }
 }
 

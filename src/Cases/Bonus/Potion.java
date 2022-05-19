@@ -1,6 +1,6 @@
-package Bonus;
+package Cases.Bonus;
 
-public class Potion extends Case{
+public class Potion extends surpriseCrate {
     private String name;
     private int vie;
 

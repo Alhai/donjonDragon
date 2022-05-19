@@ -1,15 +1,15 @@
-package Monsters;
+package Cases.Ennemies;
 
-import Bonus.Case;
+import Cases.Case;
 
-public class Monster extends Case {
+public class monsters extends Case {
     // attributes
     private String name;
     private int vie;
     private int attaque;
 
     // constructors
-    public Monster(String pName, int pVie, int pAttaque){
+    public monsters(String pName, int pVie, int pAttaque){
         this.name = pName;
         this.vie = pVie;
         this.attaque = pAttaque;
