@@ -30,9 +30,9 @@ public class Main {
 
 //        System.out.println();
         try {
-            game.lancementDdeJeu();
-//            int LancerdeD = game.lancementDdeJeu();
-            System.out.println(game.);
+//            game.lancementDdeJeu();
+            int oneTurn = game.tourDeJeu();
+            System.out.println(oneTurn);
         } catch (Exception ex){
             System.out.println(ex.getMessage());
         }

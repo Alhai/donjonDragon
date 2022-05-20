@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c348-0481-4791-9cfe-f1e75d7686ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Cases/Bonus/surpriseCrate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cases/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cases/Ennemies/dragons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cases/Ennemies/witchers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cases/emptyCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bonus/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Attack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bonus/Case.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bonus/Eclair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Eclair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bonus/Epee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Epee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bonus/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Potion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Guerrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Guerrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Heroe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Heroe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Heroes/Mage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monsters/Dragon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monsters/Goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/goblins.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/monsters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monsters/Sorcier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/caseVide.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +86,7 @@
       <workItem from="1652685170172" duration="27489000" />
       <workItem from="1652861039912" duration="19801000" />
       <workItem from="1652944049961" duration="12731000" />
+      <workItem from="1653030334110" duration="1803000" />
     </task>
     <servers />
   </component>

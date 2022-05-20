@@ -6,7 +6,6 @@ import Cases.emptyCase;
 import Exceptions.myException;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Game extends Case {
@@ -43,34 +42,34 @@ public class Game extends Case {
      * @cases Lecases affiche l'emplacement de depart d'un de
      * @max&Min LeMaxetMin sont les valeur possibles d'un lancer de de
      */
-    public void lancementDdeJeu() throws myException {
-        int max = 2;
-        int min = 1;
-//                int range = max - min + 1;
-        while (this.position < 64) {
-
-            Scanner sc = new Scanner(System.in);
-            String tourDeJeu = sc.nextLine();
-            int random = (int) Math.ceil((Math.random() * (max - min)));
-            System.out.println(random);
-            position = position + random;
-
-//            try {
+//    public void lancementDdeJeu() throws myException {
+//        int max = 2;
+//        int min = 1;
+////                int range = max - min + 1;
+//        while (this.position < 64) {
 //
-//                if (position >= 64) {
-//                    throw new myException();
+//            Scanner sc = new Scanner(System.in);
+//            String tourDeJeu = sc.nextLine();
+//            int random = (int) Math.ceil((Math.random() * (max - min)));
+//            System.out.println(random);
+//            position = position + random;
 //
-//                }
-//            } catch (myException ex) {
-//                position  = 64;
-//                System.out.println(ex.getMessage());
-//
-//            }
-//            System.out.println("Tu es à la case " + position);
+////            try {
+////
+////                if (position >= 64) {
+////                    throw new myException();
+////
+////                }
+////            } catch (myException ex) {
+////                position  = 64;
+////                System.out.println(ex.getMessage());
+////
+////            }
+////            System.out.println("Tu es à la case " + position);
+////
+////        }
 //
 //        }
-
-        }
 
 
 //
@@ -82,24 +81,54 @@ public class Game extends Case {
 //    }
 
     }
+
+    /**
+     * Methodes qui fait l'action de lancer un de allant de 1 jusqu'à 6
+     * @return la valeur du de
+     */
     public int lancerleD(){
-        int max = 2;
+        int max = 7;
         int min = 1;
         int random = (int) Math.ceil((Math.random() * (max - min)));
         System.out.println(random);
         return random;
     }
-    public void calculPosition(int random){
+
+    /**
+     * Methode qui récupère la valeur de notre de pour calculer la position sur notre plateau de jeu
+     *
+     * @param random valeur de notre de
+     * @return
+     */
+    public int calculPosition(int random){
         this.position = this.position + random;
 
+        return this.position;
     }
+
+
+
+    /**
+     * Affiche les position de notre dé et celle sur notre plateau
+     * @param random
+     */
     public void affichePosition(int random){
         System.out.println("le dé :" + random);
         System.out.println("ma position est :" + this.position);
     }
+
+    /**
+     * Un tour de jeu complet
+     * @return la nouvelle position de mon de
+     */
     public int tourDeJeu(){
        int unlancer = lancerleD();
        int resultatDuD = calculPosition(unlancer);
+       return resultatDuD;
 
+    }
+    // Constructors
+    public int getPosition() {
+        return this.position;
     }
 }
