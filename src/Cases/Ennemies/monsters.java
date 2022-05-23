@@ -4,13 +4,13 @@ import Cases.Case;
 
 public class monsters extends Case {
     // attributes
-    private String name;
+
     private int vie;
     private int attaque;
 
     // constructors
-    public monsters(String pName, int pVie, int pAttaque){
-        this.name = pName;
+    public monsters( int pVie, int pAttaque) {
+
         this.vie = pVie;
         this.attaque = pAttaque;
     }
@@ -29,9 +29,7 @@ public class monsters extends Case {
         return attaque;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     public void setVie(int vie) {
         this.vie = vie;

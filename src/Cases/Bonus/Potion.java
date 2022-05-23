@@ -1,6 +1,8 @@
 package Cases.Bonus;
 
-public class Potion extends surpriseCrate {
+import Cases.Interact;
+
+public class Potion extends surpriseCrate  implements Interact {
     private String name;
     private int vie;
 
@@ -10,4 +12,8 @@ public class Potion extends surpriseCrate {
 
     }
 
+    @Override
+    public void isInteract() {
+
+    }
 }

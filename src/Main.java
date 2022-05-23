@@ -6,9 +6,9 @@ public class Main {
 
     /**
      * Appel les méthodes qui sont instanciées dans ma classe menu et les affiches dans un scanner
+     *
      * @param args
      * @author Aly HAIDARA
-     *
      */
     public static void main(String[] args) throws myException {
 
@@ -29,13 +29,12 @@ public class Main {
         System.out.println(chant);
 
 //        System.out.println();
-        try {
 //            game.lancementDdeJeu();
-            int oneTurn = game.tourDeJeu();
-            System.out.println(oneTurn);
-        } catch (Exception ex){
-            System.out.println(ex.getMessage());
-        }
+//        int oneTurn = game.tourDeJeu();
+//        System.out.println(oneTurn);
+        int oneGame = game.startGame();
+        System.out.println(oneGame);
+
 //      Over = menu.menuEnd();
 //      System.out.println(Over);
 //  } while (Over == "restart");

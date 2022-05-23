@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c348-0481-4791-9cfe-f1e75d7686ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Cases/Interact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Bonus/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Attack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Bonus/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/dragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Dragons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Goblins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/monsters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/monsters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/witchers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Witchers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/emptyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/EmptyCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exceptions/myException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/myException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -15,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -87,6 +98,7 @@
       <workItem from="1652861039912" duration="19801000" />
       <workItem from="1652944049961" duration="12731000" />
       <workItem from="1653030334110" duration="1803000" />
+      <workItem from="1653289374933" duration="18615000" />
     </task>
     <servers />
   </component>
