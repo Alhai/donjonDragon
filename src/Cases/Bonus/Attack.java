@@ -1,7 +1,9 @@
 package Cases.Bonus;
 
 
-public class Attack extends surpriseCrate {
+import Cases.Interact;
+
+public class Attack extends surpriseCrate implements Interact {
 
     private int attack;
 
@@ -26,5 +28,11 @@ public class Attack extends surpriseCrate {
         this.attack = pAttack;
 
 
+    }
+
+
+    @Override
+    public String isInteract() {
+        return "Oh une Arme !!";
     }
 }

@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5183c348-0481-4791-9cfe-f1e75d7686ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Cases/Interact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mariadb_java_client_3_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc/mariadb-java-client-3.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donjonDragon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/donjonDragon.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cases/Bonus/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Attack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cases/Bonus/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Bonus/Potion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cases/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/dragons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Dragons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/goblins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Goblins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/EmptyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/EmptyCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/monsters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/monsters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cases/Ennemies/witchers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Ennemies/Witchers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cases/emptyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/EmptyCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/myException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exceptions/myException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cases/Interact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cases/Interact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,16 +42,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aly.haidara/Documents/javaFirst/donjonDragon/jdbc",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
-  <component name="RunManager" selected="Application.Main">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aly.haidara\Documents\javaFirst\donjonDragon\jdbc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aly.haidara\Documents\javaFirst\donjonDragon\JDBC" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <module name="donjonDragon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="donjonDragon" />
@@ -67,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Menu" />
       </list>
@@ -98,7 +116,8 @@
       <workItem from="1652861039912" duration="19801000" />
       <workItem from="1652944049961" duration="12731000" />
       <workItem from="1653030334110" duration="1803000" />
-      <workItem from="1653289374933" duration="18615000" />
+      <workItem from="1653289374933" duration="18680000" />
+      <workItem from="1653376775958" duration="13611000" />
     </task>
     <servers />
   </component>

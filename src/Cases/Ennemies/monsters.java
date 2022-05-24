@@ -1,8 +1,9 @@
 package Cases.Ennemies;
 
 import Cases.Case;
+import Cases.Interact;
 
-public class monsters extends Case {
+public class monsters extends Case implements Interact {
     // attributes
 
     private int vie;
@@ -37,5 +38,10 @@ public class monsters extends Case {
 
     public void setAttaque(int attaque) {
         this.attaque = attaque;
+    }
+
+    @Override
+    public String isInteract() {
+        return "Un monstre vous attaque";
     }
 }

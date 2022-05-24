@@ -15,7 +15,7 @@ public class EmptyCase extends Case {
 
     @Override
     public String toString() {
-        return "je suis une case";
+        return "Case vide";
     }
 }
 

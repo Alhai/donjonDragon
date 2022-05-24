@@ -6,6 +6,7 @@ import Cases.Ennemies.Dragons;
 import Cases.Ennemies.Goblins;
 import Cases.EmptyCase;
 import Cases.Ennemies.Witchers;
+import Cases.Interact;
 import Exceptions.myException;
 import Heroes.Heroe;
 
@@ -42,6 +43,7 @@ public class Game extends Case {
         possibleTiles.put(Eclair::new, 2);
         possibleTiles.put(Potion::new, 6);
         possibleTiles.put(EmptyCase::new, 16);
+        possibleTiles.put(EmptyCase::new, 8);
         for (Map.Entry<Supplier<Case>, Integer> entry : possibleTiles.entrySet()) {
             int value = entry.getValue();
             for (int i = 0; i < value; i++) {
@@ -94,7 +96,6 @@ public class Game extends Case {
         int unlancer = lancerleD();
         calculPosition(unlancer);
         return unlancer;
-
     }
 
     public int UneGame() throws myException {
@@ -107,8 +108,12 @@ public class Game extends Case {
             affichePosition(lancerdeD);
 
             if (position >= 64) {
+
                 throw new myException();
-            } else  {
+            } if ( plateau.get(this.position) instanceof Interact){
+                System.out.println(plateau.get(this.position).getName() +" : nom");
+                ((Interact) plateau.get(this.position)).isInteract();
+            }else  {
                 System.out.println("evenement = " + plateau.get(this.position));
             }
         }
@@ -119,6 +124,7 @@ public class Game extends Case {
         generateBoard();
         try {
             UneGame();
+
         } catch (myException zi) {
             System.out.println(zi.getMessage());
         }

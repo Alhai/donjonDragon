@@ -12,8 +12,9 @@ public class Potion extends surpriseCrate  implements Interact {
 
     }
 
-    @Override
-    public void isInteract() {
 
+    @Override
+    public String isInteract() {
+        return "Vous être soigné";
     }
 }
